@@ -1,0 +1,28 @@
+function NewPoints = MoverCaja( eje, theta, PointMatrix, Color2)
+
+
+
+P1 = PointMatrix(:, 1);
+P2 = PointMatrix(:, 2);
+P3 = PointMatrix(:, 3);
+P4 = PointMatrix(:, 4);
+P5 = PointMatrix(:, 5);
+P6 = PointMatrix(:, 6);
+P7 = PointMatrix(:, 7);
+P8 = PointMatrix(:, 8);
+
+
+
+P1T = RM * P1;
+P2T = RM * P2;
+P3T = RM * P3;
+P4T = RM * P4;
+P5T = RM * P5;
+P6T = RM * P6;
+P7T = RM * P7;
+P8T = RM * P8;
+
+NewPoints = [P1T, P2T, P3T, P4T, P5T, P6T, P7T, P8T];
+
+end
+
